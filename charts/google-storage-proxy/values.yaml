@@ -4,6 +4,14 @@ image:
   repository: cirrusci/google-storage-proxy
   pullPolicy: IfNotPresent
   tag: "latest"
+ 
+args: []
+
+env: []
+
+volumes: []
+
+volumeMounts: []
 
 imagePullSecrets: []
 nameOverride: ""
