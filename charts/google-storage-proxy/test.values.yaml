@@ -6,7 +6,7 @@ args:
 
 env:
   - name: GOOGLE_APPLICATION_CREDENTIALS
-    value: /var/secrets/gcs/gcs-service-account-credentials.json
+    value: /var/secrets/gcs/pathr-production-0e0a67d76bfd.json
 
 volumes:
   - name: gcs-service-account-credentials
