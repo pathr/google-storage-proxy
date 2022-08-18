@@ -12,8 +12,8 @@ volumes:
   - name: gcs-service-account-credentials
     secret:
       secretName: gcs-service-account-credentials
-      
-volumesMounts:
+
+volumeMounts:
   - name: gcs-service-account-credentials
     mountPath: "/var/secrets/gcs/"
     readOnly: true
