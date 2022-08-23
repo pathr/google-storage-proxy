@@ -1,0 +1,19 @@
+args: 
+  - "-bucket"
+  - "somebucket"
+  - "-address"
+  - "0.0.0.0"
+
+env:
+  - name: GOOGLE_APPLICATION_CREDENTIALS
+    value: /var/secrets/gcs/pathr-production-0e0a67d76bfd.json
+
+volumes:
+  - name: gcs-service-account-credentials
+    secret:
+      secretName: gcs-service-account-credentials
+
+volumeMounts:
+  - name: gcs-service-account-credentials
+    mountPath: "/var/secrets/gcs/"
+    readOnly: true

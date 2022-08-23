@@ -1,0 +1,11 @@
+apiVersion: v2
+name: google-storage-proxy
+description: A Helm chart for google storage proxy
+type: application
+version: 0.1.0
+appVersion: "0.1.0"
+keywords:
+  - gcs
+  - storage
+  - proxy
+home: https://github.com/pathr/google-storage-proxy
